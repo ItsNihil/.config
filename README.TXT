@@ -1,0 +1,1 @@
+This is the .config files for all the applications running on both my T440P with Hyprland and Desktop running KDE. More configuration files will be added as time goes on and improve in my programming skills and knownledge of linux.
