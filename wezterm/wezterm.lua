@@ -8,10 +8,17 @@ config.enable_wayland = false
 config.color_scheme = 'Dark Pastel'
 config.font = wezterm.font 'JetBrains Mono Nerd Font'
 config.font_size = 12
--- Animations and Opacity
+-- Appearance
 config.max_fps = 180
 config.animation_fps = 180
 config.window_background_opacity = 0.8
+config.window_decorations = 'RESIZE'
+config.window_padding = {
+  left = 0,
+  right = 0,
+  top = 0,
+  bottom = 0,
+}
 -- Tabs
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
