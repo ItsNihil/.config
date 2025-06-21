@@ -62,4 +62,4 @@ config.keys = {
     action = act.DetachDomain { DomainName = 'unix'},
   },
 }
-r
+return config
