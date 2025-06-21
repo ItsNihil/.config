@@ -9,8 +9,8 @@ config.color_scheme = 'Dark Pastel'
 config.font = wezterm.font 'JetBrains Mono Nerd Font'
 config.font_size = 12
 -- Animations and Opacity
-config.max_fps = 60
-config.animation_fps = 30
+config.max_fps = 180
+config.animation_fps = 180
 config.window_background_opacity = 0.8
 -- Tabs
 config.tab_bar_at_bottom = true
@@ -44,5 +44,22 @@ config.keys = {
     action = act.CloseCurrentTab{confirm = false},
   },
 }
-
-return config
+-- Unix Domain (Tmux)
+config.unix_domains = {
+  {
+    name = 'unix',
+  },
+}
+config.keys = {
+  {
+    key = 'a',
+    mods = 'LEADER',
+    action = act.AttachDomain 'unix',
+  },
+  {
+    key = 'd',
+    mods = 'LEADER',
+    action = act.DetachDomain { DomainName = 'unix'},
+  },
+}
+r
