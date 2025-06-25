@@ -23,6 +23,12 @@ config.window_padding = {
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 config.tab_and_split_indices_are_zero_based = false
+-- Unix Domain (Tmux)
+config.unix_domains = {
+  {
+    name = 'unix',
+  },
+}
 -- Keybinds
 config.leader = {
   key = 'a',
@@ -50,14 +56,6 @@ config.keys = {
     mods = 'LEADER',
     action = act.CloseCurrentTab{confirm = false},
   },
-}
--- Unix Domain (Tmux)
-config.unix_domains = {
-  {
-    name = 'unix',
-  },
-}
-config.keys = {
   {
     key = 'a',
     mods = 'LEADER',
